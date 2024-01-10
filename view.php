@@ -80,7 +80,7 @@ $MongoClient = null;
                     <tbody>
                     <?php foreach ($result as $stock) : ?>
                         <tr>
-                            <td><?php echo $stock['Symbol']; ?></td>
+                            <td><a href="https://finance.yahoo.com/quote/<?php echo $stock['Symbol']; ?>?p=<?php echo $stock['Symbol']; ?>&.tsrc=fin-srch"><?php echo $stock['Symbol']; ?></a></td>
                             <td><?php echo $stock['Name']; ?></td>
                             <td><?php echo $stock['Price']; ?></td>
                             <td><?php echo $stock['Change']; ?></td>
